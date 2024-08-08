@@ -1,0 +1,1 @@
+#include "ObjectAverage.h"

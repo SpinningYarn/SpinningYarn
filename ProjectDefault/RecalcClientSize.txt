@@ -1,0 +1,26 @@
+// 창 모드인 경우, 클라이언트 영역의 크기와 윈도 크기의 차이를 보정한다.
+// 사실 16년전에는 그냥 상수를 적당히 더해줬었다.
+// 그러면 윈도 스타일과 버전따라 그 상수가 계속 변한다..
+void GameProcess::RecalcWindowSize()
+{
+	RECT nowRect;
+	DWORD _style = (DWORD)GetWindowLong(m_hWnd, GWL_STYLE);
+	DWORD _exstyle = (DWORD)GetWindowLong(m_hWnd, GWL_EXSTYLE);
+
+	GetWindowRect(m_hWnd, &nowRect);
+
+	RECT newRect;
+	newRect.left = 0;
+	newRect.top = 0;
+	newRect.right = m_ScreenWidth;
+	newRect.bottom = m_ScreenHeight;
+
+	AdjustWindowRectEx(&newRect, _style, NULL, _exstyle);
+
+	// 클라이언트 영역보다 윈도 크기는 더 커야 한다. (외곽선, 타이틀 등)
+	int _newWidth = (newRect.right - newRect.left);
+	int _newHeight = (newRect.bottom - newRect.top);
+
+	SetWindowPos(m_hWnd, HWND_NOTOPMOST, nowRect.left, nowRect.top,
+		_newWidth, _newHeight, SWP_SHOWWINDOW);
+}

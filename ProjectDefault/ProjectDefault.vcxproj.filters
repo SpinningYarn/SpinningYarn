@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Entry">
+      <UniqueIdentifier>{8b5950c4-15c2-48e1-abc0-e2b3d4c9470e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{cfebcad2-ca8e-4cac-a365-e0ab8cddf29a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{77101814-6efa-43a9-8c29-6c90c7d9468d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameProcess">
+      <UniqueIdentifier>{7466da83-57ef-477a-a335-b468ff4ad6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KeyManager">
+      <UniqueIdentifier>{b1ac9fe6-0502-4f09-8990-1f91d4f553dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObject">
+      <UniqueIdentifier>{e2603326-4277-49f8-83a2-c07263067a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObject\Average">
+      <UniqueIdentifier>{5ca78bef-1794-4160-a756-e012e154920f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunc">
+      <UniqueIdentifier>{479f054c-2c93-4ec7-a8de-f6ddd12cacdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\AverageScene">
+      <UniqueIdentifier>{89471c39-2fd2-4f97-ad30-655e9a5bd037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\ObjectDefine">
+      <UniqueIdentifier>{6822f0fa-d516-4a56-9554-84d7077c6e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Test">
+      <UniqueIdentifier>{599c12eb-ffd2-4e3e-a17a-ae25e7545a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObject\KnittingObject">
+      <UniqueIdentifier>{55f792d0-d6c5-4127-b658-80acefd7e127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Parent">
+      <UniqueIdentifier>{a57a1ca5-87ad-4d8f-b899-d9359afaa817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObject\SpinningObject">
+      <UniqueIdentifier>{7b0e6429-25a4-4e1d-bbb4-0bd5cec2ceeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectManager">
+      <UniqueIdentifier>{f49303bd-dbaf-45cd-8d31-c553dcc5fa16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Parent">
+      <UniqueIdentifier>{16a66233-c88e-4cdc-b72f-6094456aab6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\KniitingScene">
+      <UniqueIdentifier>{67147878-265a-4d54-92fa-3a02e7a12071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SpinningScene">
+      <UniqueIdentifier>{5c7442d2-2a78-4487-a696-3b91c369ece5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneManager">
+      <UniqueIdentifier>{18c87c91-e9e6-40c8-871f-1680044bb00f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TimeManager">
+      <UniqueIdentifier>{f6f18e98-8877-41d6-bb41-92d37987aa1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{01ce2576-f898-46d3-bded-232226bad514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\WoolType">
+      <UniqueIdentifier>{6899ad49-3315-4e64-af9e-394d056cb914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoundManager">
+      <UniqueIdentifier>{43d32303-5e6e-4a09-9e8c-37982065cd95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StageManager">
+      <UniqueIdentifier>{18a5465d-610c-4ef6-8d4f-05d164cfd907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\MainScene">
+      <UniqueIdentifier>{d66d2901-1e08-4548-a3d6-eeb8d27b7f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObject\MainSceneObject">
+      <UniqueIdentifier>{2d0b7cfb-021d-4e70-ade2-b23d9b85190c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\IntroScene">
+      <UniqueIdentifier>{d20516c9-cdc4-42d6-8bc7-f4ccb1c20898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\TalkingScene1">
+      <UniqueIdentifier>{2e910852-4200-40ff-ba10-6c23f5e48bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\TalkingScene2">
+      <UniqueIdentifier>{cb67fcac-75d5-4431-b482-12afe9bb29ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\StageScene">
+      <UniqueIdentifier>{49172aa6-13b4-451c-9765-0388b4d516f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\EndingScene">
+      <UniqueIdentifier>{1205b336-9356-4442-89f2-55ccbab34d0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectDefault.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameProcess.h">
+      <Filter>GameProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerManager.h">
+      <Filter>TimeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>KeyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>KeyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseManager.h">
+      <Filter>KeyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DatumPoint.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="AverageObject.h">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClInclude>
+    <ClInclude Include="WoolStat.h">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningCenterPoint.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Average.h">
+      <Filter>Scene\AverageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="IWool.h">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClInclude>
+    <ClInclude Include="eObjectDefine.h">
+      <Filter>Object\ObjectDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObject2.h">
+      <Filter>Object\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Object\Parent</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>Scene\Parent</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Knitting.h">
+      <Filter>Scene\KniitingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Spinning.h">
+      <Filter>Scene\SpinningScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="StatBox.h">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClInclude>
+    <ClInclude Include="DragAndDrop.h">
+      <Filter>KeyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningWheel.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="KnttingBackGround.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="AnswerBoard.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningBackGround.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StatBox2.h">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Cotton.h">
+      <Filter>Object\WoolType</Filter>
+    </ClInclude>
+    <ClInclude Include="Angora.h">
+      <Filter>Object\WoolType</Filter>
+    </ClInclude>
+    <ClInclude Include="Burlap.h">
+      <Filter>Object\WoolType</Filter>
+    </ClInclude>
+    <ClInclude Include="Cashmere.h">
+      <Filter>Object\WoolType</Filter>
+    </ClInclude>
+    <ClInclude Include="LambsWool.h">
+      <Filter>Object\WoolType</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiderWeb.h">
+      <Filter>Object\WoolType</Filter>
+    </ClInclude>
+    <ClInclude Include="Credit.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="AverageBackground.h">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultProduct.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningGuideLine.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="NextSceneButton.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningGaugeBar.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningGaugBall.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningGaugeManager.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Dantto.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="Needle.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="eSound.h">
+      <Filter>SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IWoolClasses.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StageManager.h">
+      <Filter>StageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>Scene\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="HowtoPlay.h">
+      <Filter>Object\GameObject\MainSceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenu.h">
+      <Filter>CommonFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MainBackground.h">
+      <Filter>Object\GameObject\MainSceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="eStageObject.h">
+      <Filter>StageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene.h">
+      <Filter>Scene\IntroScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinningOrderMemo.h">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TalkingScene1.h">
+      <Filter>Scene\TalkingScene1</Filter>
+    </ClInclude>
+    <ClInclude Include="TalkingScene2.h">
+      <Filter>Scene\TalkingScene2</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBoard.h">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>Scene\StageScene</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingScene.h">
+      <Filter>Scene\EndingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="bgmSound.h">
+      <Filter>SoundManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProjectDefault.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="ProjectDefault.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProjectDefault.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="GameProcess.cpp">
+      <Filter>GameProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerManager.cpp">
+      <Filter>TimeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>KeyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseManager.cpp">
+      <Filter>KeyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DatumPoint.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AverageObject.cpp">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningCenterPoint.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Average.cpp">
+      <Filter>Scene\AverageScene</Filter>
+    </ClCompile>
+    <ClCompile Include="IWool.cpp">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObject2.cpp">
+      <Filter>Object\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Object\Parent</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="IScene.cpp">
+      <Filter>Scene\Parent</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Knitting.cpp">
+      <Filter>Scene\KniitingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Spinning.cpp">
+      <Filter>Scene\SpinningScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="StatBox.cpp">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClCompile>
+    <ClCompile Include="DragAndDrop.cpp">
+      <Filter>KeyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningWheel.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="KnttingBackGround.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AnswerBoard.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningBackGround.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StatBox2.cpp">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Cotton.cpp">
+      <Filter>Object\WoolType</Filter>
+    </ClCompile>
+    <ClCompile Include="Angora.cpp">
+      <Filter>Object\WoolType</Filter>
+    </ClCompile>
+    <ClCompile Include="Burlap.cpp">
+      <Filter>Object\WoolType</Filter>
+    </ClCompile>
+    <ClCompile Include="Cashmere.cpp">
+      <Filter>Object\WoolType</Filter>
+    </ClCompile>
+    <ClCompile Include="LambsWool.cpp">
+      <Filter>Object\WoolType</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiderWeb.cpp">
+      <Filter>Object\WoolType</Filter>
+    </ClCompile>
+    <ClCompile Include="Credit.cpp">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="AverageBackground.cpp">
+      <Filter>Object\GameObject\Average</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultProduct.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningGuideLine.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="NextSceneButton.cpp">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningGaugeBar.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningGaugBall.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningGaugeManager.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Dantto.cpp">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="Needle.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>SoundManager</Filter>
+    </ClCompile>
+    <ClCompile Include="StageManager.cpp">
+      <Filter>StageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>Scene\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="HowtoPlay.cpp">
+      <Filter>Object\GameObject\MainSceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenu.cpp">
+      <Filter>CommonFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MainBackground.cpp">
+      <Filter>Object\GameObject\MainSceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene.cpp">
+      <Filter>Scene\IntroScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinningOrderMemo.cpp">
+      <Filter>Object\GameObject\SpinningObject</Filter>
+    </ClCompile>
+    <ClCompile Include="TalkingScene1.cpp">
+      <Filter>Scene\TalkingScene1</Filter>
+    </ClCompile>
+    <ClCompile Include="TalkingScene2.cpp">
+      <Filter>Scene\TalkingScene2</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBoard.cpp">
+      <Filter>Object\GameObject\KnittingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>Scene\StageScene</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingScene.cpp">
+      <Filter>Scene\EndingScene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProjectDefault.vcxproj.user" />
+    <None Include="..\..\..\..\..\..\Documents\카카오톡 받은 파일\ProjectDefault.vcxproj.filters" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DragAndDrop_BackUp.txt">
+      <Filter>KeyManager</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

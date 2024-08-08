@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectDefault", "ProjectDefault\ProjectDefault.vcxproj", "{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665} = {6518B310-E085-47EB-B1BB-E9E0BB3ED665}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lemon_D2D_Engine", "D2DEngine\Lemon_D2D_Engine.vcxproj", "{6518B310-E085-47EB-B1BB-E9E0BB3ED665}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Debug|x64.ActiveCfg = Debug|x64
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Debug|x64.Build.0 = Debug|x64
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Debug|x86.ActiveCfg = Debug|Win32
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Debug|x86.Build.0 = Debug|Win32
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Release|x64.ActiveCfg = Release|x64
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Release|x64.Build.0 = Release|x64
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Release|x86.ActiveCfg = Release|Win32
+		{BEBAE467-8FDC-451F-93D6-569F7B45AE4C}.Release|x86.Build.0 = Release|Win32
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Debug|x64.ActiveCfg = Debug|x64
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Debug|x64.Build.0 = Debug|x64
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Debug|x86.ActiveCfg = Debug|Win32
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Debug|x86.Build.0 = Debug|Win32
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Release|x64.ActiveCfg = Release|x64
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Release|x64.Build.0 = Release|x64
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Release|x86.ActiveCfg = Release|Win32
+		{6518B310-E085-47EB-B1BB-E9E0BB3ED665}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63C4B7DD-729F-4C5C-BCDA-B14A7E20BE32}
+	EndGlobalSection
+EndGlobal

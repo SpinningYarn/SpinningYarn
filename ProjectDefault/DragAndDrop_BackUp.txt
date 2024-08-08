@@ -1,0 +1,104 @@
+SpinningCenterPoint.cpp
+SpinningCenterPoint::RenderObject() 함수안에 사용됬던 코드
+
+DragAndDrop 기능이 하드코딩되어있다. 나중에 혹시모를 일을 대비해 이 코드를 백업해 놓는다.
+이 코드를 위의 함수안에 넣으면 그대로 실행된다.
+
+	//// 눌렀을 경우
+	//if (m_pMouserManager->GetLeftButtonDownState() == true)
+	//{
+	//	if (m_objectTouchState == true)
+	//	{
+	//		// 기능구현()
+	//		D2DEngine::GetInstance()->DrawSpriteAlpha(
+	//			eObjectDefine::SpinningWheel, m_tempPosX, m_tempPosY, m_objectAlphaValue);
+	//		D2DEngine::GetInstance()->DrawEllipse(m_tempPosX, m_tempPosY, 13);
+	//	}
+
+	//	if (localPosX() > 0 && localPosY() > 0
+	//		&& localPosX() < 300 && localPosY() < 300
+	//		&& m_objectMisTouchState == false)
+	//	{
+	//		// 기능구현()
+	//		m_objectTouchState = true;
+	//		m_objectAlphaValue = 1.0f;
+	//	}
+	//	else if (localPosX() < 0 && localPosY() < 0
+	//		&& localPosX() > -300 && localPosY() > -300
+	//		&& m_objectTouchState == true)
+	//	{
+	//		// 기능구현()
+	//		m_objectAlphaValue = 1.0f;
+	//	}
+	//	else
+	//	{
+	//		// 기능구현()
+	//		m_objectMisTouchState = true;
+	//		m_objectAlphaValue = 0.5f;
+	//	}
+	//}
+	//else if (m_pMouserManager->GetLeftButtonUpState() == true)
+	//{
+	//	m_objectMisTouchState = false;
+	//	m_objectTouchState = false;
+	//}
+
+
+	// 드래그 앤 드랍 기능을 사용한 예시 코드
+		m_pDragAndDrop1->SetDragAndDrop(
+		[this]()->void
+		{
+			D2DEngine::GetInstance()->DrawSpriteAlpha(
+				eObjectDefine::SpinningWheel, m_MousePosX, m_MousePosY, m_ObjectAlphaValue);
+		},
+		[this]()->void
+		{
+			if (m_pMouseManager->GetLeftOneUpClickState() == true)
+			{
+				a++;
+			}
+			D2DEngine::GetInstance()->DrawText(100, 10, this->a);
+		},
+			[this]()->void
+		{
+			m_ObjectAlphaValue = 1.0f;
+		},
+			[this]()->void
+		{
+			m_ObjectAlphaValue = 1.0f;
+		},
+			[this]()->void
+		{
+			m_ObjectAlphaValue = 0.5f;
+		},
+			m_MousePosX, m_MousePosY,
+			100, 400, 300, 700,
+			100, 136, 300, 420);
+
+	D2DEngine::GetInstance()->DrawRect(100, 400, 300, 700);
+	D2DEngine::GetInstance()->DrawRect(100, 136, 300, 420);
+
+
+	/// 마우스 드래그 앤 드랍과는 관련은 없지만 잠시 여기에
+	/// Delta Time 사용 예시 코드를 작성해 놓는다.
+	/// 1초에 몇개의 프레임을 저장할 것인지이다.
+	
+	/// Delta Time 적용 코드 예시용으로 남겨둠
+	// 현재 흐르는 시간
+	m_AccTime += (float)TimerManager::GetInstance().GetDeltaTime();
+
+	// 1초당 몇 프레임인지 세기
+	m_CurFrame++;
+
+	if (m_AccTime >= 1)
+	{
+		// 값들 0으로 다시 초기화
+		m_AccTime = 0;
+		m_CurFrame = 0;
+	}
+
+	D2DEngine::GetInstance()->DrawText(
+		m_MousePosX + 200,
+		m_MousePosY,
+		m_CurFrame / 5
+	);

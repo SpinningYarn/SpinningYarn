@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bebae467-8fdc-451f-93d6-569f7b45ae4c}</ProjectGuid>
+    <RootNamespace>ProjectDefault</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\ProjectDefault\fmod_lowlevel\inc;C:\Program Files %28x86%29\FMOD SoundSystem\FMOD Studio API Windows\api\core\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\KOCCA59\Desktop\GA4th2Q_Project\Lemon\5_Project\ProjectDefault\FMOD Studio API Windows\api\core\lib\x64;C:\Program Files %28x86%29\FMOD SoundSystem\FMOD Studio API Windows\api\core\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\ProjectDefault\fmod_lowlevel\inc;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\Users\KOCCA59\Desktop\GA4th2Q_Project\Lemon\5_Project\ProjectDefault\FMOD Studio API Windows\api\core\lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lemon_D2D_Engine.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lemon_D2D_Engine.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\ProjectDefault\fmod_lowlevel\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\ProjectDefault\fmod_lowlevel\lib;..\x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lemon_D2D_Engine.lib;fmod_vc.lib;fmod64_vc.lib;fmod_vc.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\ProjectDefault\fmod_lowlevel\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\ProjectDefault\fmod_lowlevel\lib;..\x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lemon_D2D_Engine.lib;fmod_vc.lib;fmod64_vc.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Angora.h" />
+    <ClInclude Include="AnswerBoard.h" />
+    <ClInclude Include="AverageBackground.h" />
+    <ClInclude Include="bgmSound.h" />
+    <ClInclude Include="Burlap.h" />
+    <ClInclude Include="Cashmere.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Cotton.h" />
+    <ClInclude Include="Credit.h" />
+    <ClInclude Include="Dantto.h" />
+    <ClInclude Include="DatumPoint.h" />
+    <ClInclude Include="DragAndDrop.h" />
+    <ClInclude Include="DrawBoard.h" />
+    <ClInclude Include="EndingScene.h" />
+    <ClInclude Include="eObjectDefine.h" />
+    <ClInclude Include="eSound.h" />
+    <ClInclude Include="eStageObject.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="GameMenu.h" />
+    <ClInclude Include="GameProcess.h" />
+    <ClInclude Include="HowtoPlay.h" />
+    <ClInclude Include="IntroScene.h" />
+    <ClInclude Include="IWool.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="IScene.h" />
+    <ClInclude Include="IWoolClasses.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="KeyManager.h" />
+    <ClInclude Include="AverageObject.h" />
+    <ClInclude Include="KnttingBackGround.h" />
+    <ClInclude Include="LambsWool.h" />
+    <ClInclude Include="MainBackground.h" />
+    <ClInclude Include="MainScene.h" />
+    <ClInclude Include="Matrix2.h" />
+    <ClInclude Include="MouseManager.h" />
+    <ClInclude Include="Needle.h" />
+    <ClInclude Include="NextSceneButton.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="ProjectDefault.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResultProduct.h" />
+    <ClInclude Include="SpinningOrderMemo.h" />
+    <ClInclude Include="StageScene.h" />
+    <ClInclude Include="StartButton.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Scene_Average.h" />
+    <ClInclude Include="Scene_Knitting.h" />
+    <ClInclude Include="Scene_Spinning.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="SpiderWeb.h" />
+    <ClInclude Include="SpinningBackGround.h" />
+    <ClInclude Include="SpinningCenterPoint.h" />
+    <ClInclude Include="SpinningGaugBall.h" />
+    <ClInclude Include="SpinningGaugeBar.h" />
+    <ClInclude Include="SpinningGaugeManager.h" />
+    <ClInclude Include="SpinningGuideLine.h" />
+    <ClInclude Include="SpinningWheel.h" />
+    <ClInclude Include="StageManager.h" />
+    <ClInclude Include="StatBox.h" />
+    <ClInclude Include="StatBox2.h" />
+    <ClInclude Include="TalkingScene1.h" />
+    <ClInclude Include="TalkingScene2.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestObject2.h" />
+    <ClInclude Include="TimerManager.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="WoolStat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Angora.cpp" />
+    <ClCompile Include="AnswerBoard.cpp" />
+    <ClCompile Include="AverageBackground.cpp" />
+    <ClCompile Include="Burlap.cpp" />
+    <ClCompile Include="Cashmere.cpp" />
+    <ClCompile Include="Cotton.cpp" />
+    <ClCompile Include="Credit.cpp" />
+    <ClCompile Include="Dantto.cpp" />
+    <ClCompile Include="DatumPoint.cpp" />
+    <ClCompile Include="DragAndDrop.cpp" />
+    <ClCompile Include="DrawBoard.cpp" />
+    <ClCompile Include="EndingScene.cpp" />
+    <ClCompile Include="GameMenu.cpp" />
+    <ClCompile Include="GameProcess.cpp" />
+    <ClCompile Include="HowtoPlay.cpp" />
+    <ClCompile Include="IntroScene.cpp" />
+    <ClCompile Include="IWool.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="IScene.cpp" />
+    <ClCompile Include="KeyManager.cpp" />
+    <ClCompile Include="AverageObject.cpp" />
+    <ClCompile Include="KnttingBackGround.cpp" />
+    <ClCompile Include="LambsWool.cpp" />
+    <ClCompile Include="MainBackground.cpp" />
+    <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="Matrix2.cpp" />
+    <ClCompile Include="MouseManager.cpp" />
+    <ClCompile Include="Needle.cpp" />
+    <ClCompile Include="NextSceneButton.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="ProjectDefault.cpp" />
+    <ClCompile Include="ResultProduct.cpp" />
+    <ClCompile Include="SpinningOrderMemo.cpp" />
+    <ClCompile Include="StageScene.cpp" />
+    <ClCompile Include="StartButton.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Scene_Average.cpp" />
+    <ClCompile Include="Scene_Knitting.cpp" />
+    <ClCompile Include="Scene_Spinning.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="SpiderWeb.cpp" />
+    <ClCompile Include="SpinningBackGround.cpp" />
+    <ClCompile Include="SpinningCenterPoint.cpp" />
+    <ClCompile Include="SpinningGaugBall.cpp" />
+    <ClCompile Include="SpinningGaugeBar.cpp" />
+    <ClCompile Include="SpinningGaugeManager.cpp" />
+    <ClCompile Include="SpinningGuideLine.cpp" />
+    <ClCompile Include="SpinningWheel.cpp" />
+    <ClCompile Include="StageManager.cpp" />
+    <ClCompile Include="StatBox.cpp" />
+    <ClCompile Include="StatBox2.cpp" />
+    <ClCompile Include="TalkingScene1.cpp" />
+    <ClCompile Include="TalkingScene2.cpp" />
+    <ClCompile Include="TestObject2.cpp" />
+    <ClCompile Include="TimerManager.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProjectDefault.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ProjectDefault.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Documents\카카오톡 받은 파일\ProjectDefault.vcxproj.filters" />
+    <None Include="ProjectDefault.vcxproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DragAndDrop_BackUp.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
